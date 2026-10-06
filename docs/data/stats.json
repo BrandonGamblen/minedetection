@@ -1,0 +1,86 @@
+{
+  "_rules": "Every stat needs value, label, source.name, source.url and as_of, or the page will not render it. Data year 2024, published 1 Dec 2025. Replace when Landmine Monitor 2026 is released.",
+  "headline": "casualties-2024",
+  "stats": [
+    {
+      "id": "casualties-2024",
+      "value": "6,279",
+      "label": "people killed or injured by landmines and explosive remnants of war in 2024: 1,945 killed, 4,325 injured.",
+      "source": {
+        "name": "Landmine Monitor 2025, Major Findings",
+        "url": "https://the-monitor.org/api/assets/reports/Landmine-Monitors/LMM2025/Downloads/LM2025-Major-Findings_EN.pdf"
+      },
+      "as_of": "2025-12-01"
+    },
+    {
+      "id": "civilians",
+      "value": "90%",
+      "label": "of recorded casualties were civilians (5,385 people).",
+      "source": {
+        "name": "Landmine Monitor 2025, Major Findings",
+        "url": "https://the-monitor.org/api/assets/reports/Landmine-Monitors/LMM2025/Downloads/LM2025-Major-Findings_EN.pdf"
+      },
+      "as_of": "2025-12-01"
+    },
+    {
+      "id": "children",
+      "value": "46%",
+      "label": "of civilian casualties were children (1,701), where age was recorded.",
+      "source": {
+        "name": "Landmine Monitor 2025, Major Findings",
+        "url": "https://the-monitor.org/api/assets/reports/Landmine-Monitors/LMM2025/Downloads/LM2025-Major-Findings_EN.pdf"
+      },
+      "as_of": "2025-12-01"
+    },
+    {
+      "id": "countries",
+      "value": "52",
+      "label": "countries and areas recorded mine or explosive-remnant casualties in 2024.",
+      "source": {
+        "name": "Landmine Monitor 2025, Major Findings",
+        "url": "https://the-monitor.org/api/assets/reports/Landmine-Monitors/LMM2025/Downloads/LM2025-Major-Findings_EN.pdf"
+      },
+      "as_of": "2025-12-01"
+    },
+    {
+      "id": "myanmar",
+      "value": "2,029",
+      "label": "casualties in Myanmar, the highest of any country for the second year running.",
+      "source": {
+        "name": "Landmine Monitor 2025, Major Findings",
+        "url": "https://the-monitor.org/api/assets/reports/Landmine-Monitors/LMM2025/Downloads/LM2025-Major-Findings_EN.pdf"
+      },
+      "as_of": "2025-12-01"
+    },
+    {
+      "id": "improvised",
+      "value": "2,077",
+      "label": "casualties from victim-activated improvised mines, the leading cause.",
+      "source": {
+        "name": "MAG, reporting Landmine Monitor 2025",
+        "url": "https://maginternational.org/whats-happening/2025-landmine-monitor-out-now/"
+      },
+      "as_of": "2025-12-01"
+    },
+    {
+      "id": "manufactured-ap",
+      "value": "1,540",
+      "label": "casualties from manufactured anti-personnel mines, triple the 2020 figure and the highest since 2011.",
+      "source": {
+        "name": "MAG, reporting Landmine Monitor 2025",
+        "url": "https://maginternational.org/whats-happening/2025-landmine-monitor-out-now/"
+      },
+      "as_of": "2025-12-01"
+    },
+    {
+      "id": "land-released",
+      "value": "1,114.82 km²",
+      "label": "of contaminated land released by Mine Ban Treaty States Parties in 2024.",
+      "source": {
+        "name": "Landmine Monitor 2025, Major Findings",
+        "url": "https://the-monitor.org/api/assets/reports/Landmine-Monitors/LMM2025/Downloads/LM2025-Major-Findings_EN.pdf"
+      },
+      "as_of": "2025-12-01"
+    }
+  ]
+}

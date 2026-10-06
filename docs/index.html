@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mine Detection: landmine contamination, casualties and news</title>
+<meta name="description" content="Sourced figures on landmine casualties, profiles of common mines, and a live feed of mine action news.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+  /* Palette from mine-marking practice: red danger sign, white cleared-lane tape,
+     survey-sheet grey-green, olive field ink. */
+  :root {
+    --paper: #E8EBE4;
+    --sheet: #F4F5F1;
+    --ink: #1F2721;
+    --muted: #586356;
+    --rule: #C3CABD;
+    --danger: #B3141F;
+    --tape: #FFFFFF;
+    --sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 1.0625rem/1.6 var(--serif);
+  }
+  a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--danger); }
+  :focus-visible { outline: 3px solid var(--danger); outline-offset: 2px; }
+
+  .wrap { max-width: 70rem; margin: 0 auto; padding: 0 1.25rem; }
+
+  /* ---------- hero ---------- */
+  .hero {
+    padding: 3.5rem 0 3rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: end;
+  }
+  .sign {
+    width: clamp(7rem, 18vw, 12rem);
+    aspect-ratio: 1 / 0.88;
+    background: var(--danger);
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    display: grid;
+    place-items: end center;
+    padding-bottom: 12%;
+    color: var(--tape);
+    font: 800 clamp(0.8rem, 1.8vw, 1.1rem)/1 var(--sans);
+    font-stretch: 75%;
+    letter-spacing: 0.02em;
+  }
+  .hero-number {
+    font: 800 clamp(4rem, 13vw, 9.5rem)/0.85 var(--sans);
+    font-stretch: 62%;
+    letter-spacing: -0.02em;
+    margin: 0;
+    color: var(--danger);
+  }
+  .hero h1 {
+    font: 600 clamp(1.25rem, 2.6vw, 1.75rem)/1.25 var(--sans);
+    font-stretch: 100%;
+    margin: 0.75rem 0 0;
+    max-width: 34ch;
+  }
+  .hero .cite { font-size: 0.875rem; color: var(--muted); margin-top: 0.6rem; }
+
+  /* lane tape divider: the one decorative device, used between sections */
+  .tape {
+    height: 10px;
+    background: repeating-linear-gradient(90deg, var(--danger) 0 40px, var(--tape) 40px 80px);
+    border-block: 1px solid var(--rule);
+  }
+
+  section.wrap { padding-block: 3rem; }
+  h2 {
+    font: 700 clamp(1.6rem, 3.5vw, 2.25rem)/1.1 var(--sans);
+    font-stretch: 85%;
+    margin: 0 0 0.5rem;
+  }
+  .lede { color: var(--muted); max-width: 62ch; margin: 0 0 2rem; }
+
+  /* ---------- stats ---------- */
+  .stats { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+  .stats li {
+    display: grid;
+    grid-template-columns: minmax(8rem, 15rem) 1fr;
+    gap: 0.25rem 2rem;
+    padding: 1.1rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .stat-value {
+    font: 800 clamp(1.75rem, 4vw, 2.6rem)/1 var(--sans);
+    font-stretch: 70%;
+  }
+  .stat-label { max-width: 52ch; }
+  .stat-src { grid-column: 2; font-size: 0.85rem; color: var(--muted); }
+
+  /* ---------- ordnance ---------- */
+  .profiles { display: grid; gap: 1rem; }
+  details.profile {
+    background: var(--sheet);
+    border: 1px solid var(--rule);
+    border-left: 6px solid var(--danger);
+  }
+  details.profile > summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 1.1rem 1.25rem;
+    display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; align-items: baseline;
+  }
+  details.profile > summary::-webkit-details-marker { display: none; }
+  .p-name { font: 700 1.5rem/1.1 var(--sans); font-stretch: 85%; }
+  .p-type { color: var(--muted); }
+  .p-toggle { margin-left: auto; font: 600 0.9rem var(--sans); color: var(--danger); }
+  details[open] .p-toggle::after { content: "Hide"; }
+  details:not([open]) .p-toggle::after { content: "Show profile"; }
+  .p-body { padding: 0 1.25rem 1.25rem; display: grid; grid-template-columns: 1fr minmax(12rem, 18rem); gap: 1.5rem; }
+  .p-facts { margin: 0; display: grid; grid-template-columns: 8rem 1fr; gap: 0.5rem 1rem; }
+  .p-facts dt { font: 600 0.95rem/1.6 var(--sans); }
+  .p-facts dd { margin: 0; }
+  .p-facts sup a { text-decoration: none; color: var(--danger); font-family: var(--sans); font-weight: 700; }
+  .p-side { font-size: 0.95rem; }
+  .p-image {
+    aspect-ratio: 4 / 3; background: var(--paper); border: 1px dashed var(--rule);
+    display: grid; place-items: center; color: var(--muted); text-align: center; padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .p-image img { width: 100%; height: 100%; object-fit: cover; }
+  .warning {
+    background: var(--danger); color: var(--tape); padding: 0.9rem 1rem;
+    font: 600 0.95rem/1.45 var(--sans);
+  }
+  .p-sources { grid-column: 1 / -1; font-size: 0.85rem; color: var(--muted); margin: 0; padding-left: 1.25rem; }
+
+  /* ---------- feed ---------- */
+  .feed-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-bottom: 1rem; }
+  .feed-bar button {
+    font: 600 0.9rem var(--sans); color: var(--ink); background: transparent;
+    border: 1px solid var(--ink); padding: 0.4rem 0.9rem; cursor: pointer;
+  }
+  .feed-bar button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+  .feed-meta { margin-left: auto; font-size: 0.85rem; color: var(--muted); }
+  .feed { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+  .feed li {
+    display: grid; grid-template-columns: 6.5rem 1fr; gap: 1rem;
+    padding: 0.85rem 0; border-bottom: 1px solid var(--rule);
+  }
+  .f-date { font: 500 0.9rem/1.6 var(--sans); color: var(--muted); }
+  .f-title { font-weight: 600; }
+  .f-src { display: block; font-size: 0.85rem; color: var(--muted); }
+  .empty { padding: 1.5rem 0; color: var(--muted); }
+  .more { margin-top: 1rem; }
+
+  footer.wrap { padding-block: 2.5rem 3rem; font-size: 0.9rem; color: var(--muted); }
+  footer p { max-width: 62ch; }
+
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 1rem; padding-top: 2rem; }
+    .stats li { grid-template-columns: 1fr; }
+    .stat-src { grid-column: 1; }
+    .p-body { grid-template-columns: 1fr; }
+    .p-facts { grid-template-columns: 1fr; gap: 0 0; }
+    .p-facts dd { margin-bottom: 0.6rem; }
+    .feed li { grid-template-columns: 1fr; gap: 0.15rem; }
+    .feed-meta { margin-left: 0; width: 100%; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-number { animation: rise 700ms cubic-bezier(.2,.7,.2,1) both; }
+    @keyframes rise { from { opacity: 0; transform: translateY(0.15em); } }
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap hero" id="hero">
+  <div class="sign" aria-hidden="true">MINES</div>
+  <div>
+    <p class="hero-number" id="hero-number">&nbsp;</p>
+    <h1 id="hero-label">Loading figures…</h1>
+    <p class="cite" id="hero-cite"></p>
+  </div>
+</header>
+
+<div class="tape" role="presentation"></div>
+
+<main>
+  <section class="wrap" id="numbers" aria-labelledby="numbers-h">
+    <h2 id="numbers-h">The numbers</h2>
+    <p class="lede">Each figure links to its source. We update these by hand when new annual reports are published.</p>
+    <ul class="stats" id="stats"></ul>
+  </section>
+
+  <div class="tape" role="presentation"></div>
+
+  <section class="wrap" id="ordnance" aria-labelledby="ordnance-h">
+    <h2 id="ordnance-h">Know what they look like</h2>
+    <p class="lede">Profiles of mines found in contaminated areas, for recognition only. More profiles are added as they are sourced.</p>
+    <div class="profiles" id="profiles"></div>
+  </section>
+
+  <div class="tape" role="presentation"></div>
+
+  <section class="wrap" id="news" aria-labelledby="news-h">
+    <h2 id="news-h">Latest news</h2>
+    <p class="lede">Headlines from news outlets and humanitarian reports, refreshed every six hours. Links go to the original publisher.</p>
+    <div class="feed-bar" role="group" aria-label="Filter news">
+      <button type="button" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" data-filter="news" aria-pressed="false">News outlets</button>
+      <button type="button" data-filter="reliefweb" aria-pressed="false">Humanitarian reports</button>
+      <button type="button" data-filter="feeds" aria-pressed="false">Mine action organizations</button>
+      <span class="feed-meta" id="feed-meta"></span>
+    </div>
+    <ul class="feed" id="feed"></ul>
+    <button type="button" class="more" id="more" hidden>Show more headlines</button>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>Built and maintained by <a href="https://shield-dynamics.com">Shield Dynamics</a>. Headlines link to their original publishers; this site does not republish article text. Figures are drawn from the Landmine and Cluster Munition Monitor and other cited sources.</p>
+  <p>If you find a suspected mine or unexploded ordnance, do not touch it. Leave the way you came and report it to local authorities.</p>
+</footer>
+
+<script>
+(() => {
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const safeUrl = u => /^https?:\/\//i.test(u || "") ? u : "#";
+  const getJSON = p => fetch(p, { cache: "no-cache" }).then(r => {
+    if (!r.ok) throw new Error(p + " returned " + r.status);
+    return r.json();
+  });
+  const fmtDate = iso => {
+    if (!iso) return "Undated";
+    const d = new Date(iso);
+    return isNaN(d) ? "Undated" : d.toLocaleDateString("en-CA", { day: "numeric", month: "short", year: "numeric" });
+  };
+
+  // ---------- stats ----------
+  const validStat = s => s && s.value && s.label && s.as_of && s.source && s.source.name && /^https?:\/\//.test(s.source.url || "");
+
+  getJSON("data/stats.json").then(data => {
+    const stats = (data.stats || []).filter(s => {
+      if (!validStat(s)) { console.warn("Stat skipped, missing value/label/source/as_of:", s && s.id); return false; }
+      return true;
+    });
+    const head = stats.find(s => s.id === data.headline) || stats[0];
+    if (head) {
+      document.getElementById("hero-number").textContent = head.value;
+      document.getElementById("hero-label").textContent = head.label.charAt(0).toUpperCase() + head.label.slice(1);
+      document.getElementById("hero-cite").innerHTML =
+        `Source: <a href="${esc(safeUrl(head.source.url))}">${esc(head.source.name)}</a>`;
+    }
+    document.getElementById("stats").innerHTML = stats.filter(s => s !== head).map(s => `
+      <li>
+        <span class="stat-value">${esc(s.value)}</span>
+        <span class="stat-label">${esc(s.label)}</span>
+        <span class="stat-src"><a href="${esc(safeUrl(s.source.url))}">${esc(s.source.name)}</a>, published ${esc(fmtDate(s.as_of))}</span>
+      </li>`).join("");
+  }).catch(err => {
+    document.getElementById("hero-label").textContent = "Figures could not be loaded. Reload the page to try again.";
+    console.error(err);
+  });
+
+  // ---------- ordnance ----------
+  getJSON("data/ordnance.json").then(data => {
+    const pubs = (data.profiles || []).filter(p => p.status === "published" && p.facts && p.facts.length && p.sources && p.sources.length);
+    const el = document.getElementById("profiles");
+    if (!pubs.length) { el.innerHTML = `<p class="empty">No profiles published yet.</p>`; return; }
+    el.innerHTML = pubs.map((p, i) => {
+      const facts = p.facts.map(f => {
+        const refs = (f.src || []).filter(n => p.sources[n]).map(n =>
+          `<a href="#src-${esc(p.id)}-${n}" aria-label="Source ${n + 1}">${n + 1}</a>`).join(",");
+        return `<dt>${esc(f.label)}</dt><dd>${esc(f.text)}${refs ? ` <sup>${refs}</sup>` : ""}</dd>`;
+      }).join("");
+      const img = p.image && p.image.url && p.image.credit
+        ? `<div class="p-image"><img src="${esc(safeUrl(p.image.url))}" alt="${esc(p.image.alt || p.name)}"></div>
+           <p>${esc(p.image.credit)}</p>`
+        : `<div class="p-image">No licensed image yet</div>`;
+      const srcs = p.sources.map((s, n) =>
+        `<li id="src-${esc(p.id)}-${n}"><a href="${esc(safeUrl(s.url))}">${esc(s.name)}</a></li>`).join("");
+      return `
+        <details class="profile" ${i === 0 ? "open" : ""}>
+          <summary>
+            <span class="p-name">${esc(p.name)}</span>
+            <span class="p-type">${esc(p.type)}${p.origin ? `, ${esc(p.origin)}` : ""}</span>
+            <span class="p-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="p-body">
+            <dl class="p-facts">${facts}</dl>
+            <div class="p-side">
+              ${img}
+              <p class="warning">If you see an object like this, do not touch it. Leave the way you came and report it.</p>
+            </div>
+            <ol class="p-sources">${srcs}</ol>
+          </div>
+        </details>`;
+    }).join("");
+  }).catch(err => {
+    document.getElementById("profiles").innerHTML = `<p class="empty">Profiles could not be loaded. Reload the page to try again.</p>`;
+    console.error(err);
+  });
+
+  // ---------- feed ----------
+  const PAGE = 40;
+  let items = [], filter = "all", shown = PAGE;
+  const feedEl = document.getElementById("feed");
+  const moreBtn = document.getElementById("more");
+
+  function renderFeed() {
+    const list = filter === "all" ? items : items.filter(i => i.origin === filter);
+    if (!list.length) {
+      feedEl.innerHTML = `<li class="empty">${items.length
+        ? "No headlines from this source in the last 30 days. Choose All to see everything."
+        : "No headlines yet. The feed refreshes every six hours."}</li>`;
+      moreBtn.hidden = true;
+      return;
+    }
+    feedEl.innerHTML = list.slice(0, shown).map(i => `
+      <li>
+        <span class="f-date">${esc(fmtDate(i.published))}</span>
+        <span>
+          <a class="f-title" href="${esc(safeUrl(i.url))}" rel="noopener">${esc(i.title)}</a>
+          <span class="f-src">${esc(i.source)}${i.country ? `, ${esc(i.country)}` : ""}</span>
+        </span>
+      </li>`).join("");
+    moreBtn.hidden = list.length <= shown;
+  }
+
+  document.querySelectorAll(".feed-bar button").forEach(b => b.addEventListener("click", () => {
+    filter = b.dataset.filter; shown = PAGE;
+    document.querySelectorAll(".feed-bar button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+    renderFeed();
+  }));
+  moreBtn.addEventListener("click", () => { shown += PAGE; renderFeed(); });
+
+  getJSON("data/feed.json").then(data => {
+    items = data.items || [];
+    const meta = document.getElementById("feed-meta");
+    if (data.generated_at) {
+      const d = new Date(data.generated_at);
+      meta.textContent = `Updated ${d.toLocaleString("en-CA", { dateStyle: "medium", timeStyle: "short" })}`;
+    }
+    renderFeed();
+  }).catch(err => {
+    feedEl.innerHTML = `<li class="empty">News could not be loaded. Reload the page to try again.</li>`;
+    console.error(err);
+  });
+})();
+</script>
+</body>
+</html>
