@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-10-16T11:28:47Z",
+ "generated_at": "2026-10-16T16:40:57Z",
  "sources": [
   {
    "name": "GDELT",
-   "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 5
   },
   {
    "name": "ReliefWeb",
@@ -13,6 +13,24 @@
   }
  ],
  "items": [
+  {
+   "id": "9a8709d1ff1aec15",
+   "title": "1 killed as unexploded device goes off in E . Afghanistan",
+   "url": "http://www.afghanistannews.net/news/279378372/1-killed-as-unexploded-device-goes-off-in-e-afghanistan",
+   "source": "afghanistannews.net",
+   "published": "2026-10-16T11:00:00Z",
+   "origin": "news",
+   "country": "Afghanistan"
+  },
+  {
+   "id": "056a660927a4df7b",
+   "title": "1 killed as unexploded device goes off in E . Afghanistan - Xinhua",
+   "url": "https://english.news.cn/asiapacific/20261016/44cab2d0c9d948168a71f023f71da243/c.html",
+   "source": "english.news.cn",
+   "published": "2026-10-16T10:00:00Z",
+   "origin": "news",
+   "country": ""
+  },
   {
    "id": "e4245b5d69c940e5",
    "title": "Afghanistan declares first province free of landmines , explosive remnants - Xinhua",
