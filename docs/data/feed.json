@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T11:07:52Z",
+ "generated_at": "2026-10-18T15:54:33Z",
  "sources": [
   {
    "name": "GDELT",
@@ -13,6 +13,33 @@
   }
  ],
  "items": [
+  {
+   "id": "2230edc085296c7f",
+   "title": "Eight Soldiers Killed As Army Vehicle Hits Landmine Near Cameroon Border",
+   "url": "https://leadership.ng/8-soldiers-killed-as-army-vehicle-hits-landmine-near-cameroon-border/",
+   "source": "leadership.ng",
+   "published": "2026-10-18T13:00:00Z",
+   "origin": "news",
+   "country": "Nigeria"
+  },
+  {
+   "id": "d92a322788738a65",
+   "title": "Mine kills eight Nigerian troops",
+   "url": "https://www.hurriyetdailynews.com/mine-kills-eight-nigerian-troops-228274",
+   "source": "hurriyetdailynews.com",
+   "published": "2026-10-18T12:45:00Z",
+   "origin": "news",
+   "country": "Turkey"
+  },
+  {
+   "id": "72f0c5d6bba63b2f",
+   "title": "Eight Nigerian soldiers killed as army vehicle hits landmine",
+   "url": "https://www.vanguardngr.com/2026/10/eight-nigerian-soldiers-killed-as-army-vehicle-hits-landmine/",
+   "source": "vanguardngr.com",
+   "published": "2026-10-18T11:00:00Z",
+   "origin": "news",
+   "country": "Nigeria"
+  },
   {
    "id": "ffd23e7cc9f490c9",
    "title": "Build Explosive Strength in Your 40s , 50s and Beyond with Landmine Training – 11 Best Beginner to Advanced Moves",
