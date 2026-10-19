@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-10-18T20:47:52Z",
+ "generated_at": "2026-10-19T04:45:16Z",
  "sources": [
   {
    "name": "GDELT",
-   "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 9
   },
   {
    "name": "ReliefWeb",
@@ -13,6 +13,24 @@
   }
  ],
  "items": [
+  {
+   "id": "ad8f74ea1d154fe6",
+   "title": "Syria , UNMAS discuss coordination on demining",
+   "url": "https://sana.sy/en/syria/2351857/",
+   "source": "sana.sy",
+   "published": "2026-10-18T17:15:00Z",
+   "origin": "news",
+   "country": "Syria"
+  },
+  {
+   "id": "1dc7bc8bdfecaf34",
+   "title": "Soldiers killed as military van runs into ISWAP landmine in Borno – Daily Trust",
+   "url": "https://dailytrust.com/soldiers-killed-as-military-van-runs-into-iswap-landmine-in-borno/",
+   "source": "dailytrust.com",
+   "published": "2026-10-18T16:45:00Z",
+   "origin": "news",
+   "country": "Niger"
+  },
   {
    "id": "2230edc085296c7f",
    "title": "Eight Soldiers Killed As Army Vehicle Hits Landmine Near Cameroon Border",
