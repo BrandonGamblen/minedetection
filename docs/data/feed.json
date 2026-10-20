@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-10-19T22:24:56Z",
+ "generated_at": "2026-10-20T04:53:22Z",
  "sources": [
   {
    "name": "GDELT",
-   "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 15
   },
   {
    "name": "ReliefWeb",
@@ -13,6 +13,78 @@
   }
  ],
  "items": [
+  {
+   "id": "8efd3226f72053e0",
+   "title": "Finland seeking one million land mines as it eyes Russian threat",
+   "url": "https://www.aljazeera.com/news/2026/10/19/finland-seeking-one-million-land-mines-as-it-eyes-russian-threat",
+   "source": "aljazeera.com",
+   "published": "2026-10-19T23:15:00Z",
+   "origin": "news",
+   "country": "United States"
+  },
+  {
+   "id": "cc40e25b14b8d246",
+   "title": "Finland seeking one million land mines as it eyes Russian threat - Dominican Republic Post – Caribbean News , Business , Travel & Culture",
+   "url": "https://dominicanrepublicpost.com/finland-seeking-one-million-land-mines-as-it-eyes-russian-threat/",
+   "source": "dominicanrepublicpost.com",
+   "published": "2026-10-19T21:30:00Z",
+   "origin": "news",
+   "country": "United States"
+  },
+  {
+   "id": "918fd43f87f9d34f",
+   "title": "Dramatic moment huge drone lifts wounded Ukrainian soldier from minefield in world - first battlefield rescue",
+   "url": "https://www.lbc.co.uk/article/dramatic-moment-huge-drone-lifts-wounded-ukrainian-soldier-from-minefield-in-wor-5Hjdk7q_2/",
+   "source": "lbc.co.uk",
+   "published": "2026-10-19T18:45:00Z",
+   "origin": "news",
+   "country": "United Kingdom"
+  },
+  {
+   "id": "b39bbd3de4fc3590",
+   "title": "Cambodia landmine , ERW casualties fall to 32 during Jan .- Sept . period",
+   "url": "http://www.cambodiantimes.com/news/279384523/cambodia-landmine-erw-casualties-fall-to-32-during-jan-sept-period",
+   "source": "cambodiantimes.com",
+   "published": "2026-10-19T17:45:00Z",
+   "origin": "news",
+   "country": "Cambodia"
+  },
+  {
+   "id": "20324958945637bd",
+   "title": "ANAMA reports progress in mine clearance acros 13 districts",
+   "url": "https://www.azernews.az/events/265827.html",
+   "source": "azernews.az",
+   "published": "2026-10-19T15:00:00Z",
+   "origin": "news",
+   "country": "Azerbaijan"
+  },
+  {
+   "id": "2144bd7fafd47d2a",
+   "title": "Azerbaijan clears 309 , 000 hectares of mines in liberated districts ( PHOTO )",
+   "url": "https://www.trend.az/azerbaijan/society/4236634.html",
+   "source": "trend.az",
+   "published": "2026-10-19T13:45:00Z",
+   "origin": "news",
+   "country": "Azerbaijan"
+  },
+  {
+   "id": "07374e8c63b624ae",
+   "title": "308 , 945 hectares cleared of mines in Jabrayil , Gubadli and Zangilan",
+   "url": "https://en.apa.az/incident/308945-hectares-cleared-of-mines-in-jabrayil-gubadli-and-zangilan-530899",
+   "source": "en.apa.az",
+   "published": "2026-10-19T13:30:00Z",
+   "origin": "news",
+   "country": "Azerbaijan"
+  },
+  {
+   "id": "1155b61e58100c8c",
+   "title": "Working Group on mine and unexploded ordnance clearance holds meeting in Jabrayil",
+   "url": "https://en.apa.az/social/working-group-on-mine-and-unexploded-ordnance-clearance-holds-meeting-in-jabrayil-530896",
+   "source": "en.apa.az",
+   "published": "2026-10-19T13:30:00Z",
+   "origin": "news",
+   "country": "Azerbaijan"
+  },
   {
    "id": "ad8f74ea1d154fe6",
    "title": "Syria , UNMAS discuss coordination on demining",
