@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-10-21T17:14:21Z",
+ "generated_at": "2026-10-21T21:46:28Z",
  "sources": [
   {
    "name": "GDELT",
    "ok": false,
-   "error": "<urlopen error timed out>"
+   "error": "HTTP Error 429: Too Many Requests"
   },
   {
    "name": "ReliefWeb",
