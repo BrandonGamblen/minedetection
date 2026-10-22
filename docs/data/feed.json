@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-10-22T11:55:22Z",
+ "generated_at": "2026-10-22T17:14:38Z",
  "sources": [
   {
    "name": "GDELT",
-   "ok": true,
-   "count": 8
+   "ok": false,
+   "error": "HTTP Error 429: Too Many Requests"
   },
   {
    "name": "ReliefWeb",
