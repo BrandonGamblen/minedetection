@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-10-22T04:51:27Z",
+ "generated_at": "2026-10-22T11:55:22Z",
  "sources": [
   {
    "name": "GDELT",
-   "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 8
   },
   {
    "name": "ReliefWeb",
@@ -13,6 +13,42 @@
   }
  ],
  "items": [
+  {
+   "id": "6614b11f8cfe7493",
+   "title": "Campaign events across Europe highlight landmine threat in Azerbaijan - PHOTO",
+   "url": "https://en.apa.az/europe/campaign-events-across-europe-highlight-landmine-threat-in-azerbaijan-photo-531501",
+   "source": "en.apa.az",
+   "published": "2026-10-22T06:45:00Z",
+   "origin": "news",
+   "country": "Azerbaijan"
+  },
+  {
+   "id": "830c1acda3529416",
+   "title": "Azerbaijani NGO holds Milan photo show on landmines left after conflict ( PHOTO )",
+   "url": "https://www.trend.az/azerbaijan/4237713.html",
+   "source": "trend.az",
+   "published": "2026-10-22T05:45:00Z",
+   "origin": "news",
+   "country": "Azerbaijan"
+  },
+  {
+   "id": "55f7352a47198e5e",
+   "title": "Somalia Landmines Hit 2 Vehicles on 20 Oct",
+   "url": "https://www.riotimesonline.com/somalia-landmines-hit-two-vehicles-lower-shabelle-2026/",
+   "source": "riotimesonline.com",
+   "published": "2026-10-21T19:15:00Z",
+   "origin": "news",
+   "country": "Brazil"
+  },
+  {
+   "id": "a7161dd8c23eeeae",
+   "title": "Finland to Purchase 1 Million Landmines as Russia Continues Attacks on Ukraine",
+   "url": "https://www.democracynow.org/2026/10/20/headlines/russian_attacks_in_ukraine_kill_four_civilians",
+   "source": "democracynow.org",
+   "published": "2026-10-20T17:30:00Z",
+   "origin": "news",
+   "country": "United States"
+  },
   {
    "id": "8efd3226f72053e0",
    "title": "Finland seeking one million land mines as it eyes Russian threat",
