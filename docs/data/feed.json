@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-10-24T16:01:06Z",
+ "generated_at": "2026-10-24T20:53:14Z",
  "sources": [
   {
    "name": "GDELT",
-   "ok": false,
-   "error": "<urlopen error timed out>"
+   "ok": true,
+   "count": 8
   },
   {
    "name": "ReliefWeb",
@@ -13,6 +13,24 @@
   }
  ],
  "items": [
+  {
+   "id": "0bcdc427e9a9dbb0",
+   "title": "Writer Digest 95th Annual Competition Nonfiction Essay or Article First Place Winner : Our Ancestor Script , Today Minefield",
+   "url": "https://www.writersdigest.com/95th-comp-nonfiction-essay",
+   "source": "writersdigest.com",
+   "published": "2026-10-24T15:30:00Z",
+   "origin": "news",
+   "country": "United States"
+  },
+  {
+   "id": "24628d5108643506",
+   "title": "Azerbaijan highlights hisability rights reforms and mine victims at the UN",
+   "url": "https://www.trend.az/azerbaijan/politics/4238553.html",
+   "source": "trend.az",
+   "published": "2026-10-23T23:30:00Z",
+   "origin": "news",
+   "country": "Azerbaijan"
+  },
   {
    "id": "fc86b27f2faa6517",
    "title": "North Korea has laid an estimated 960 , 000 mines in DMZ since 2024 , South military says",
