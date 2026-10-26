@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-10-26T13:08:01Z",
+ "generated_at": "2026-10-26T22:41:47Z",
  "sources": [
   {
    "name": "GDELT",
-   "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 4
   },
   {
    "name": "ReliefWeb",
@@ -13,6 +13,24 @@
   }
  ],
  "items": [
+  {
+   "id": "97b54b6b15d3fe10",
+   "title": "Seoul fabricated landmine blast , North Korea tells UN in letter | Border Disputes News",
+   "url": "https://www.aljazeera.com/news/2026/10/26/seoul-fabricated-landmine-blast-north-korea-tells-un-in-letter",
+   "source": "aljazeera.com",
+   "published": "2026-10-26T07:15:00Z",
+   "origin": "news",
+   "country": "United States"
+  },
+  {
+   "id": "a039adc42c4be917",
+   "title": "Seoul fabricated landmine blast , North Korea tells UN in letter - Grenada Chronicle – Daily Grenada And Caribbean News",
+   "url": "https://grenadachronicle.com/seoul-fabricated-landmine-blast-north-korea-tells-un-in-letter/",
+   "source": "grenadachronicle.com",
+   "published": "2026-10-26T05:00:00Z",
+   "origin": "news",
+   "country": "United States"
+  },
   {
    "id": "0bcdc427e9a9dbb0",
    "title": "Writer Digest 95th Annual Competition Nonfiction Essay or Article First Place Winner : Our Ancestor Script , Today Minefield",
