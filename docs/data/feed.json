@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-10-27T12:16:23Z",
+ "generated_at": "2026-10-27T18:03:54Z",
  "sources": [
   {
    "name": "GDELT",
    "ok": true,
-   "count": 3
+   "count": 2
   },
   {
    "name": "ReliefWeb",
