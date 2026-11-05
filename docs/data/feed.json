@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-05T06:51:33Z",
+ "generated_at": "2026-11-05T20:00:56Z",
  "sources": [
   {
    "name": "GDELT",
    "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "error": "<urlopen error _ssl.c:994: The handshake operation timed out>"
   },
   {
    "name": "ReliefWeb",
