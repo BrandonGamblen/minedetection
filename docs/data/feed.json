@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-05T20:00:56Z",
+ "generated_at": "2026-11-06T06:49:43Z",
  "sources": [
   {
    "name": "GDELT",
-   "ok": false,
-   "error": "<urlopen error _ssl.c:994: The handshake operation timed out>"
+   "ok": true,
+   "count": 0
   },
   {
    "name": "ReliefWeb",
