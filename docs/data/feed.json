@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-08T06:05:54Z",
+ "generated_at": "2026-11-08T13:26:58Z",
  "sources": [
   {
    "name": "GDELT",
-   "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 2
   },
   {
    "name": "ReliefWeb",
@@ -13,6 +13,24 @@
   }
  ],
  "items": [
+  {
+   "id": "eee54e705be1d9d5",
+   "title": "Syrian soldier killed , another wounded in Deir ez - Zor landmine blast",
+   "url": "https://article.wn.com/view/2026/11/07/Syrian_soldier_killed_another_wounded_in_Deir_ezZor_landmine/",
+   "source": "article.wn.com",
+   "published": "2026-11-07T18:30:00Z",
+   "origin": "news",
+   "country": "United States"
+  },
+  {
+   "id": "fd5e8de53f6bc7d2",
+   "title": "Soldier killed , another injured by landmine explosion in eastern Syria",
+   "url": "https://aa.com.tr/en/middle-east/soldier-killed-another-injured-by-landmine-explosion-in-eastern-syria/4115210",
+   "source": "aa.com.tr",
+   "published": "2026-11-07T18:00:00Z",
+   "origin": "news",
+   "country": "Turkey"
+  },
   {
    "id": "97b54b6b15d3fe10",
    "title": "Seoul fabricated landmine blast , North Korea tells UN in letter | Border Disputes News",
