@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-13T19:46:28Z",
+ "generated_at": "2026-11-14T06:26:03Z",
  "sources": [
   {
    "name": "GDELT",
-   "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 3
   },
   {
    "name": "ReliefWeb",
@@ -13,6 +13,33 @@
   }
  ],
  "items": [
+  {
+   "id": "b8ddd80683e167d4",
+   "title": "Thessaloniki Port : Unexploded ordnance complicates expansion project as talks with government continue",
+   "url": "https://www.naftemporiki.gr/english/2187896/thessaloniki-port-unexploded-ordnance-complicates-expansion-project-as-talks-with-government-continue/",
+   "source": "naftemporiki.gr",
+   "published": "2026-11-12T07:00:00Z",
+   "origin": "news",
+   "country": "Greece"
+  },
+  {
+   "id": "cbe1365908ec4c95",
+   "title": "3 Free - Agent Landmines Twins Need to Avoid This Offseason",
+   "url": "https://twinsdaily.com/minnesota-twins-news/twins/3-free-agent-landmines-twins-need-to-avoid-this-offseason-r21422/",
+   "source": "twinsdaily.com",
+   "published": "2026-11-12T01:30:00Z",
+   "origin": "news",
+   "country": "United States"
+  },
+  {
+   "id": "c0911456b6cbfb6c",
+   "title": "Arab News | Syrian demining worker killed , another injured as explosive remnants claim 14 lives since Oct . 14",
+   "url": "https://www.arabnews.com/middle-east/syrian-demining-worker-killed-another-injured-as-explosive-remnants-claim-14-lives-since-oct-14-3011323",
+   "source": "arabnews.com",
+   "published": "2026-11-12T01:30:00Z",
+   "origin": "news",
+   "country": "Saudi Arabia"
+  },
   {
    "id": "eee54e705be1d9d5",
    "title": "Syrian soldier killed , another wounded in Deir ez - Zor landmine blast",
