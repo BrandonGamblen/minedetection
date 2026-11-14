@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T06:26:03Z",
+ "generated_at": "2026-11-14T18:05:08Z",
  "sources": [
   {
    "name": "GDELT",
@@ -309,24 +309,6 @@
    "published": "2026-10-16T10:00:00Z",
    "origin": "news",
    "country": ""
-  },
-  {
-   "id": "e4245b5d69c940e5",
-   "title": "Afghanistan declares first province free of landmines , explosive remnants - Xinhua",
-   "url": "https://english.news.cn/asiapacific/20261015/72075634786f4363a26c51d886861cce/c.html",
-   "source": "english.news.cn",
-   "published": "2026-10-15T13:15:00Z",
-   "origin": "news",
-   "country": ""
-  },
-  {
-   "id": "0ec4bcb952257068",
-   "title": "Afghanistan declares first province free of landmines , explosive remnants",
-   "url": "http://www.bignewsnetwork.com/news/279376385/afghanistan-declares-first-province-free-of-landmines-explosive-remnants",
-   "source": "bignewsnetwork.com",
-   "published": "2026-10-15T12:45:00Z",
-   "origin": "news",
-   "country": "United States"
   }
  ]
 }
