@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-16T06:32:36Z",
+ "generated_at": "2026-11-16T22:06:21Z",
  "sources": [
   {
    "name": "GDELT",
-   "ok": true,
-   "count": 0
+   "ok": false,
+   "error": "HTTP Error 429: Too Many Requests"
   },
   {
    "name": "ReliefWeb",
@@ -282,15 +282,6 @@
    "published": "2026-10-18T08:15:00Z",
    "origin": "news",
    "country": "United States"
-  },
-  {
-   "id": "9f7f2a8a3fb65faf",
-   "title": "New Safety Net Framework Prohibits Public Works In Mine - Risk Zones Without Clearance",
-   "url": "https://www.thereporterethiopia.com/53483/",
-   "source": "thereporterethiopia.com",
-   "published": "2026-10-17T10:30:00Z",
-   "origin": "news",
-   "country": "Ethiopia"
   }
  ]
 }
