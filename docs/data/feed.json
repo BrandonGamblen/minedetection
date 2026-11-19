@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-19T07:30:28Z",
+ "generated_at": "2026-11-19T20:38:47Z",
  "sources": [
   {
    "name": "GDELT",
-   "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 0
   },
   {
    "name": "ReliefWeb",
@@ -147,15 +147,6 @@
    "published": "2026-10-21T19:15:00Z",
    "origin": "news",
    "country": "Brazil"
-  },
-  {
-   "id": "a7161dd8c23eeeae",
-   "title": "Finland to Purchase 1 Million Landmines as Russia Continues Attacks on Ukraine",
-   "url": "https://www.democracynow.org/2026/10/20/headlines/russian_attacks_in_ukraine_kill_four_civilians",
-   "source": "democracynow.org",
-   "published": "2026-10-20T17:30:00Z",
-   "origin": "news",
-   "country": "United States"
   }
  ]
 }
