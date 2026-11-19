@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-18T20:33:13Z",
+ "generated_at": "2026-11-19T07:30:28Z",
  "sources": [
   {
    "name": "GDELT",
-   "ok": true,
-   "count": 0
+   "ok": false,
+   "error": "HTTP Error 429: Too Many Requests"
   },
   {
    "name": "ReliefWeb",
@@ -154,24 +154,6 @@
    "url": "https://www.democracynow.org/2026/10/20/headlines/russian_attacks_in_ukraine_kill_four_civilians",
    "source": "democracynow.org",
    "published": "2026-10-20T17:30:00Z",
-   "origin": "news",
-   "country": "United States"
-  },
-  {
-   "id": "8efd3226f72053e0",
-   "title": "Finland seeking one million land mines as it eyes Russian threat",
-   "url": "https://www.aljazeera.com/news/2026/10/19/finland-seeking-one-million-land-mines-as-it-eyes-russian-threat",
-   "source": "aljazeera.com",
-   "published": "2026-10-19T23:15:00Z",
-   "origin": "news",
-   "country": "United States"
-  },
-  {
-   "id": "cc40e25b14b8d246",
-   "title": "Finland seeking one million land mines as it eyes Russian threat - Dominican Republic Post – Caribbean News , Business , Travel & Culture",
-   "url": "https://dominicanrepublicpost.com/finland-seeking-one-million-land-mines-as-it-eyes-russian-threat/",
-   "source": "dominicanrepublicpost.com",
-   "published": "2026-10-19T21:30:00Z",
    "origin": "news",
    "country": "United States"
   }
