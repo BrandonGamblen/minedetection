@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T20:25:38Z",
+ "generated_at": "2026-11-21T07:12:42Z",
  "sources": [
   {
    "name": "GDELT",
@@ -129,24 +129,6 @@
    "published": "2026-10-22T15:30:00Z",
    "origin": "news",
    "country": "United States"
-  },
-  {
-   "id": "6614b11f8cfe7493",
-   "title": "Campaign events across Europe highlight landmine threat in Azerbaijan - PHOTO",
-   "url": "https://en.apa.az/europe/campaign-events-across-europe-highlight-landmine-threat-in-azerbaijan-photo-531501",
-   "source": "en.apa.az",
-   "published": "2026-10-22T06:45:00Z",
-   "origin": "news",
-   "country": "Azerbaijan"
-  },
-  {
-   "id": "830c1acda3529416",
-   "title": "Azerbaijani NGO holds Milan photo show on landmines left after conflict ( PHOTO )",
-   "url": "https://www.trend.az/azerbaijan/4237713.html",
-   "source": "trend.az",
-   "published": "2026-10-22T05:45:00Z",
-   "origin": "news",
-   "country": "Azerbaijan"
   }
  ]
 }
