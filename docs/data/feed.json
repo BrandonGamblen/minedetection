@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-21T07:12:42Z",
+ "generated_at": "2026-11-21T19:18:06Z",
  "sources": [
   {
    "name": "GDELT",
-   "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 1
   },
   {
    "name": "ReliefWeb",
@@ -120,15 +120,6 @@
    "published": "2026-10-23T08:15:00Z",
    "origin": "news",
    "country": "Syria"
-  },
-  {
-   "id": "b0ea4a895bd012df",
-   "title": "Trump Anti - DEI Agenda Threatens to Slash Land Mine Disposal Efforts Globally",
-   "url": "https://truthout.org/articles/trumps-anti-dei-agenda-threatens-to-slash-land-mine-disposal-efforts-globally/",
-   "source": "truthout.org",
-   "published": "2026-10-22T15:30:00Z",
-   "origin": "news",
-   "country": "United States"
   }
  ]
 }
