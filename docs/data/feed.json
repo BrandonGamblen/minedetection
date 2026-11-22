@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-22T06:52:45Z",
+ "generated_at": "2026-11-22T19:44:21Z",
  "sources": [
   {
    "name": "GDELT",
-   "ok": true,
-   "count": 1
+   "ok": false,
+   "error": "HTTP Error 429: Too Many Requests"
   },
   {
    "name": "ReliefWeb",
@@ -102,24 +102,6 @@
    "published": "2026-10-23T23:30:00Z",
    "origin": "news",
    "country": "Azerbaijan"
-  },
-  {
-   "id": "fc86b27f2faa6517",
-   "title": "North Korea has laid an estimated 960 , 000 mines in DMZ since 2024 , South military says",
-   "url": "http://english.hani.co.kr/arti/english_edition/e_northkorea/1283903.html",
-   "source": "english.hani.co.kr",
-   "published": "2026-10-23T12:30:00Z",
-   "origin": "news",
-   "country": "South Korea"
-  },
-  {
-   "id": "f2b172e54e0c8471",
-   "title": "Syria , UN discuss expanding cooperation on mine clearance",
-   "url": "https://sana.sy/en/syria/2352987/",
-   "source": "sana.sy",
-   "published": "2026-10-23T08:15:00Z",
-   "origin": "news",
-   "country": "Syria"
   }
  ]
 }
