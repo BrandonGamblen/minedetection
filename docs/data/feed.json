@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-23T07:43:37Z",
+ "generated_at": "2026-11-23T23:55:05Z",
  "sources": [
   {
    "name": "GDELT",
-   "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 1
   },
   {
    "name": "ReliefWeb",
@@ -13,6 +13,15 @@
   }
  ],
  "items": [
+  {
+   "id": "5d6b654753771768",
+   "title": "Landmine explosion kills 4 children , injures 2 in northwestern Syria",
+   "url": "https://www.middleeastmonitor.com/20261122-landmine-explosion-kills-4-children-injures-2-in-northwestern-syria/",
+   "source": "middleeastmonitor.com",
+   "published": "2026-11-22T20:30:00Z",
+   "origin": "news",
+   "country": "Israel"
+  },
   {
    "id": "19679eec64e4ddf0",
    "title": "Beecroft Peninsula bushfire : RFS faces unexploded ordnance | Milton Ulladulla Times",
@@ -82,15 +91,6 @@
    "url": "https://grenadachronicle.com/seoul-fabricated-landmine-blast-north-korea-tells-un-in-letter/",
    "source": "grenadachronicle.com",
    "published": "2026-10-26T05:00:00Z",
-   "origin": "news",
-   "country": "United States"
-  },
-  {
-   "id": "0bcdc427e9a9dbb0",
-   "title": "Writer Digest 95th Annual Competition Nonfiction Essay or Article First Place Winner : Our Ancestor Script , Today Minefield",
-   "url": "https://www.writersdigest.com/95th-comp-nonfiction-essay",
-   "source": "writersdigest.com",
-   "published": "2026-10-24T15:30:00Z",
    "origin": "news",
    "country": "United States"
   }
