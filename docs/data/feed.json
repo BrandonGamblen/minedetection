@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T19:44:21Z",
+ "generated_at": "2026-11-23T07:43:37Z",
  "sources": [
   {
    "name": "GDELT",
@@ -93,15 +93,6 @@
    "published": "2026-10-24T15:30:00Z",
    "origin": "news",
    "country": "United States"
-  },
-  {
-   "id": "24628d5108643506",
-   "title": "Azerbaijan highlights hisability rights reforms and mine victims at the UN",
-   "url": "https://www.trend.az/azerbaijan/politics/4238553.html",
-   "source": "trend.az",
-   "published": "2026-10-23T23:30:00Z",
-   "origin": "news",
-   "country": "Azerbaijan"
   }
  ]
 }
