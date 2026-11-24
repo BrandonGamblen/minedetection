@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-24T09:55:38Z",
+ "generated_at": "2026-11-24T22:27:49Z",
  "sources": [
   {
    "name": "GDELT",
    "ok": true,
-   "count": 1
+   "count": 3
   },
   {
    "name": "ReliefWeb",
@@ -13,6 +13,24 @@
   }
  ],
  "items": [
+  {
+   "id": "076dd449b7763d4b",
+   "title": "Syria , Japan and UN discuss project to boost national mine action center",
+   "url": "https://sana.sy/en/syria/2361583/",
+   "source": "sana.sy",
+   "published": "2026-11-24T21:45:00Z",
+   "origin": "news",
+   "country": "Syria"
+  },
+  {
+   "id": "54198b009e07fa5e",
+   "title": "Global landmine casualties hit a five - year high , driven by Myanmar , Syria",
+   "url": "https://www.aljazeera.com/news/2026/11/24/global-landmine-casualties-hit-a-five-year-high-driven-by-myanmar-syria",
+   "source": "aljazeera.com",
+   "published": "2026-11-24T21:30:00Z",
+   "origin": "news",
+   "country": "United States"
+  },
   {
    "id": "5d6b654753771768",
    "title": "Landmine explosion kills 4 children , injures 2 in northwestern Syria",
