@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-26T08:22:42Z",
+ "generated_at": "2026-11-26T21:33:43Z",
  "sources": [
   {
    "name": "GDELT",
-   "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 8
   },
   {
    "name": "ReliefWeb",
@@ -13,6 +13,60 @@
   }
  ],
  "items": [
+  {
+   "id": "b1f532125a4a14c3",
+   "title": "Panic as children discover unexploded 60mm bomb in Tigania , Meru",
+   "url": "https://www.the-star.co.ke/news/2026-11-26-panic-as-children-discover-unexploded-bomb-in-meru",
+   "source": "the-star.co.ke",
+   "published": "2026-11-26T06:15:00Z",
+   "origin": "news",
+   "country": "Kenya"
+  },
+  {
+   "id": "00c5021f9b9d01a9",
+   "title": "2 people killed as unexploded ordnance goes off in N . Afghanistan",
+   "url": "http://www.azerbaijannews.net/news/279449839/2-people-killed-as-unexploded-ordnance-goes-off-in-n-afghanistan",
+   "source": "azerbaijannews.net",
+   "published": "2026-11-26T01:15:00Z",
+   "origin": "news",
+   "country": "Azerbaijan"
+  },
+  {
+   "id": "df5469b3c41bf085",
+   "title": "In landmine - ravaged Myanmar , a rebel with an artificial leg vows to fight on",
+   "url": "https://bdnews24.com/neighbours/63mknuxu6n",
+   "source": "bdnews24.com",
+   "published": "2026-11-25T05:15:00Z",
+   "origin": "news",
+   "country": "Bangladesh"
+  },
+  {
+   "id": "aeab281bb8582d91",
+   "title": "Global landmine toll climbs to six ‑ year high , 6 , 929 killed or injured in 2025",
+   "url": "https://kenya-today.com/report-global-landmine-toll-climbs-to-sixyear-high-6929-killed-or-injured-in-2025-32831/",
+   "source": "kenya-today.com",
+   "published": "2026-11-25T05:15:00Z",
+   "origin": "news",
+   "country": "Kenya"
+  },
+  {
+   "id": "857aa71006b15679",
+   "title": "Syria land mine casualties soar , two years after war",
+   "url": "https://www.bbc.com/news/articles/c893rl37ywdgo",
+   "source": "bbc.com",
+   "published": "2026-11-25T04:15:00Z",
+   "origin": "news",
+   "country": "United Kingdom"
+  },
+  {
+   "id": "3c27baf6b20f9d47",
+   "title": "SYRIA RETURN : US Weighs Sending Small Force Back To Train Syrian Troops In Demining",
+   "url": "https://www.theyeshivaworld.com/news/general/2627689/syria-return-us-weighs-sending-small-force-back-to-train-syrian-troops-in-demining.html",
+   "source": "theyeshivaworld.com",
+   "published": "2026-11-25T03:30:00Z",
+   "origin": "news",
+   "country": "United States"
+  },
   {
    "id": "076dd449b7763d4b",
    "title": "Syria , Japan and UN discuss project to boost national mine action center",
